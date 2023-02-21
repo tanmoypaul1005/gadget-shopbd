@@ -1,6 +1,7 @@
 
-import TopBar from '@/(components)/TopBar/TopBar'
+import TopBar from '@/(components)/TopBar/TopBar';
 import './globals.css'
+import CommonCarousel from '@/(components)/commonCarousel/CommonCarousel';
 
 export default function RootLayout({ children }) {
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <TopBar />
+        <CommonCarousel/>
         {children}
       </body>
     </html>
