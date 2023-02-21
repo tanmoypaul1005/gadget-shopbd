@@ -1,0 +1,1 @@
+export { default as shopLogo } from "../image/png/trolley.png";
