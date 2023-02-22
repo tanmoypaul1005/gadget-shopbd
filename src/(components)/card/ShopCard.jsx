@@ -12,9 +12,9 @@ const ShopCard = ({
 }) => {
     return (
 
-        <div class="p-4 sm:w-1/2 lg:w-1/3 cursor-pointer relative">
+        <div class="p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 cursor-pointer relative">
             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-60 md:h-48 w-full object-cover object-center"
+                <img class="lg:h-[200px] md:h-[160px] w-full object-cover object-center"
                     src={image} alt="blog" />
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     {/* <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
@@ -27,8 +27,8 @@ const ShopCard = ({
                         <Image
                             src={shopLogo}
                             alt="Picture of the author"
-                            width={35}
-                            height={35}
+                            width={30}
+                            height={30}
                         />
                     </div>
                     <div class="flex items-center flex-wrap ">
