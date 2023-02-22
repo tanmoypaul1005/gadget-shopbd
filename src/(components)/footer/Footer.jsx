@@ -4,10 +4,10 @@ function Footer() {
     return (
         <div>
             <footer
-                className="bg-black pt-20 lg:pt-[50px] relative z-10 wow fadeInUp"
+                className="bg-black pt-20 lg:pt-[50px] relative z-10 wow fadeInUp fixed"
                 data-wow-delay=".15s"
             >
-                <div className="container">
+                <div className="container ml-[20px]">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12 px-4">
                             <div className="w-full mb-10">
@@ -25,10 +25,9 @@ function Footer() {
                                     using technology.
                                 </p>
                                 <div className="flex items-center -mx-3">
-                                    <div className="px-3 text-[#dddddd] hover:text-white">
+                                    <div className="cursor-pointer px-3 text-[#dddddd] hover:text-white">
 
-                                        <svg
-                                            width="10"
+                                        <svg width="10"
                                             height="18"
                                             viewBox="0 0 10 18"
                                             className="fill-current"
@@ -36,7 +35,7 @@ function Footer() {
                                             <path d="M9.00007 6.82105H7.50006H6.96434V6.27097V4.56571V4.01562H7.50006H8.62507C8.91971 4.01562 9.16078 3.79559 9.16078 3.46554V0.550085C9.16078 0.247538 8.9465 0 8.62507 0H6.66969C4.55361 0 3.08038 1.54024 3.08038 3.82309V6.21596V6.76605H2.54466H0.72322C0.348217 6.76605 0 7.06859 0 7.50866V9.48897C0 9.87402 0.294645 10.2316 0.72322 10.2316H2.49109H3.02681V10.7817V16.31C3.02681 16.6951 3.32145 17.0526 3.75003 17.0526H6.26791C6.42862 17.0526 6.56255 16.9701 6.66969 16.8601C6.77684 16.7501 6.8572 16.5576 6.8572 16.3925V10.8092V10.2591H7.4197H8.62507C8.97328 10.2591 9.24114 10.0391 9.29471 9.709V9.6815V9.65399L9.66972 7.7562C9.6965 7.56367 9.66972 7.34363 9.509 7.1236C9.45543 6.98608 9.21436 6.84856 9.00007 6.82105Z" />
                                         </svg>
                                     </div>
-                                    <div className="px-3 text-[#dddddd] hover:text-white"
+                                    <div className="cursor-pointer px-3 text-[#dddddd] hover:text-white"
                                     >
                                         <svg
                                             width="19"
@@ -48,10 +47,7 @@ function Footer() {
                                         </svg>
                                     </div>
 
-                                    <div
-
-                                        className="px-3 text-[#dddddd] hover:text-white"
-                                    >
+                                    <div className="cursor-pointer px-3 text-[#dddddd] hover:text-white">
 
                                         <svg
                                             width="18"
@@ -65,10 +61,7 @@ function Footer() {
                                         </svg>
                                     </div>
 
-                                    <div
-
-                                        className="px-3 text-[#dddddd] hover:text-white"
-                                    >
+                                    <div className=" cursor-pointer px-3 text-[#dddddd] hover:text-white">
                                         <svg
                                             width="18"
                                             height="18"
@@ -87,41 +80,31 @@ function Footer() {
                                 <h4 className="text-white text-lg font-semibold mb-9">About Us</h4>
                                 <ul>
                                     <li>
-                                        <a
-                                            href="javascript:void(0)"
+                                        <a href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
-                                        >
-                                            Home
-                                        </a>
+                                         inline-block
+                                        text-base text-[#f3f4fe]
+                                        hover:text-primary
+                                        leading-loose
+                                        mb-2">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" className="
+                                        inline-block
+                                        text-base text-[#f3f4fe]
+                                        hover:text-primary
+                                        leading-loose
+                                        mb-2">Features</a>
                                     </li>
                                     <li>
                                         <a
                                             href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
-                                        >
-                                            Features
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
-                                        >
+                                            inline-block
+                                            text-base text-[#f3f4fe]
+                                            hover:text-primary
+                                            leading-loose
+                                            mb-2">
                                             About
                                         </a>
                                     </li>
@@ -130,11 +113,11 @@ function Footer() {
                                         <a
                                             href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
+                                                inline-block
+                                                text-base text-[#f3f4fe]
+                                                hover:text-primary
+                                                leading-loose
+                                                mb-2"
                                         >
                                             Testimonial
                                         </a>
@@ -152,26 +135,21 @@ function Footer() {
                                         <a
                                             href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
-                                        >
-                                            How it works
-                                        </a>
+                                            inline-block
+                                            text-base text-[#f3f4fe]
+                                            hover:text-primary
+                                            leading-loose
+                                            mb-2">How it works</a>
                                     </li>
 
                                     <li>
-                                        <a
-                                            href="javascript:void(0)"
+                                        <a href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
-                                        >
+                                                inline-block
+                                                text-base text-[#f3f4fe]
+                                                hover:text-primary
+                                                leading-loose
+                                                mb-2">
                                             Privacy policy
                                         </a>
                                     </li>
@@ -180,11 +158,11 @@ function Footer() {
                                         <a
                                             href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2"
+                                            inline-block
+                                            text-base text-[#f3f4fe]
+                                            hover:text-primary
+                                            leading-loose
+                                            mb-2"
                                         >
                                             Terms of Service
                                         </a>
@@ -194,11 +172,11 @@ function Footer() {
                                         <a
                                             href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2 "
+                                                inline-block
+                                                text-base text-[#f3f4fe]
+                                                hover:text-primary
+                                                leading-loose
+                                                mb-2 "
                                         >
                                             Refund policy
                                         </a>
@@ -216,29 +194,18 @@ function Footer() {
                                     <li>
                                         <a
                                             href="javascript:void(0)"
-                                            className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
-                                        >
+                                            className="inline-block text-base text-[#f3f4fe] hover:text-primary leading-loose mb-2">
                                             LineIcons
                                         </a>
                                     </li>
                                     <li>
 
-                                        <a
-                                            href="javascript:void(0)"
+                                        <a href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
-                                        >
+                                            inline-block
+                                            text-base text-[#f3f4fe]
+                                            hover:text-primary
+                                            leading-loose mb-2">
                                             Ecommerce HTML
                                         </a>
                                     </li>
@@ -246,13 +213,11 @@ function Footer() {
                                         <a
                                             href="javascript:void(0)"
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
-                                        >
+                                            inline-block
+                                            text-base text-[#f3f4fe]
+                                            hover:text-primary
+                                            leading-loose
+                                            mb-2">
                                             Ayro UI
                                         </a>
                                     </li>
@@ -260,13 +225,11 @@ function Footer() {
                                         <a
                                             href=""
                                             className="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
-                                        >
+                                            inline-block
+                                            text-base text-[#f3f4fe]
+                                            hover:text-primary
+                                            leading-loose
+                                            mb-2">
                                             PlainAdmin
                                         </a>
                                     </li>
@@ -278,13 +241,13 @@ function Footer() {
                 </div>
 
                 <div className="border-t border-opacity-40 py-[20px] mt-20 lg:mt-[20px]">
-                    <div className="container">
+                    <div className="container ml-[20px]">
                         <div className="flex flex-wrap -mx-4">
                             <div className="w-full md:w-2/3 lg:w-1/2 px-4">
                                 <div className="my-1">
                                     <div
                                         className="flex items-center justify-center md:justify-start -mx-3">
-                                        <div className="text-base text-[#f3f4fe] hover:text-primary px-3">
+                                        <div className="cursor-pointer text-base text-[#f3f4fe] hover:text-primary px-3">
                                             Privacy policy
                                         </div>
                                         <div
@@ -293,19 +256,18 @@ function Footer() {
                                         >
                                             Legal notice
                                         </div>
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="text-base text-[#f3f4fe] hover:text-primary px-3"
-                                        >
-                                            Terms of service
-                                        </a>
+                                        <div className="text-base text-[#f3f4fe] hover:text-primary px-3"
+                                        >Terms of service
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+
                             <div className="w-full md:w-1/3 lg:w-1/2 px-4">
                                 <div className="flex justify-center md:justify-end my-1">
                                     <p className="text-base text-[#f3f4fe]">
-                                        Designed and Developed by
+                                        <span className="mr-[5px]">Designed and Developed by</span>
                                         <span
                                             rel="nofollow noopner"
                                             target="_blank"
@@ -316,6 +278,8 @@ function Footer() {
                                     </p>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
