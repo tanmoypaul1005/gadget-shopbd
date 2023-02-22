@@ -12,12 +12,12 @@ const CommonCarousel = () => (
   <Carousel autoplay>
     <div>
       <h3 style={contentStyle}>
-        <img className="w-full object cover" src="https://i.ibb.co/ncrXc2V/1.png"/>
+        <img className="w-full object-fill" src="https://www.creatopy.com/blog/wp-content/uploads/2018/05/animations-e-commerce.png"/>
       </h3>
     </div>
     <div>
     <h3 style={contentStyle}>
-        <img className="w-full object cover"  src="https://i.ibb.co/B3s7v4h/2.png"/>
+        <img className="w-full object-fill"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGgM8RlZ0uehCZUxvIxTnjQY_DU_rYNAVTyA_eCrsZzUZiF9HzPni8ptGY4pTtXcf-EB0&usqp=CAU"/>
       </h3>
     </div>
     <div>
