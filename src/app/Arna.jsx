@@ -33,18 +33,15 @@ function Arna() {
                                         <div x-show="image === 1" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
                                             <span class="text-5xl">1</span>
                                         </div>
-
-                                        <div x-show="image === 2" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+                                        {/* <div x-show="image === 2" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
                                             <span class="text-5xl">2</span>
                                         </div>
-
                                         <div x-show="image === 3" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
                                             <span class="text-5xl">3</span>
                                         </div>
-
                                         <div x-show="image === 4" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
                                             <span class="text-5xl">4</span>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <div class="flex -mx-2 mb-4">
