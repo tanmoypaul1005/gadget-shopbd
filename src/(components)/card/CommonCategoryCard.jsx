@@ -1,12 +1,12 @@
 "use client"
 import React from 'react';
-
+import Link from 'next/link';
 
 const CommonCategoryCard = () => {
 
     return (
         <div>
-            <div 
+            <Link href="/category/1" 
                 className=" relative block overflow-hidden 
                 rounded-xl bg-[url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80)] bg-cover bg-center bg-no-repeat">
                 <div className="absolute inset-0 bg-black/25"></div>
@@ -39,7 +39,7 @@ const CommonCategoryCard = () => {
                         </svg>
                     </span>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
