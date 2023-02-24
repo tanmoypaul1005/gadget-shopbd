@@ -1,7 +1,8 @@
-
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import { shopLogo } from '@/Utility/AllImageImport';
+import Link from 'next/link';
 
 const ShopCard = ({
     title = "some Title",
@@ -10,9 +11,10 @@ const ShopCard = ({
     image = "https://www.ncenet.com/wp-content/uploads/2020/04/No-image-found.jpg",
     price = "0"
 }) => {
+
     return (
 
-        <div className="p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 cursor-pointer relative">
+        <Link href="/product/1" className="p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 cursor-pointer relative">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img className="lg:h-[200px] md:h-[160px] w-full object-cover object-center"
                     src={image} alt="blog" />
@@ -55,7 +57,7 @@ const ShopCard = ({
             </div>
 
             {new_arrivals && <div className='absolute right-4 top-4 bg-red-400 text-sm text-white py-[2px] px-1 rounded-sm'>New</div>}
-        </div>
+        </Link>
 
     );
 };
