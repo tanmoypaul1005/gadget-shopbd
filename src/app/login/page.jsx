@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Login = () => {
-    
+
     return (
-        
+
         <div>
             {/* <!-- ====== Forms Section Start --> */}
-            <section className="bg-[#F4F7FF] py-14 lg:py-20">
+            <section className="bg-[#F4F7FF] py-5">
                 <div className="container">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full px-4">
@@ -36,7 +36,7 @@ const Login = () => {
                                             placeholder-[#ACB6BE]
                                             outline-none focus-visible:shadow-none focus:border-primary transition"/>
                                     </div>
-                                    <div className="mb-6">
+                                    <div className="">
                                         <input
                                             type="password"
                                             placeholder="Password"
@@ -47,30 +47,25 @@ const Login = () => {
                                             focus:border-primary transition"
                                         />
                                     </div>
-                                    <div className="mb-10">
+
+
+                                    <div className="my-2 flex justify-end text-base  mb-2  text-black hover:text-primary">
+                                        Forget Password?
+                                    </div>
+
+                                    <div className="mb-6">
                                         <input
                                             type="submit"
                                             value="Sign In"
-                                            className="
-                                            w-full
-                                            rounded-md
-                                            border
-                                            border-primary
-                                            py-3
-                                            px-5
-                                            bg-primary
-                                            text-base text-white
-                                            cursor-pointer
-                                            hover:shadow-md
-                                            transition
-                                            duration-300
-                                            ease-in-out
-                                            "
+                                            className="bg-[#4064AC] w-full rounded-md border border-primary
+                                            py-3 px-5 bg-primary text-base text-white cursor-pointer 
+                                            hover:shadow-md transition duration-300 ease-in-out"
                                         />
                                     </div>
+
                                 </form>
-                                <p className="text-base mb-6 text-[#adadad]">Connect With</p>
-                                <ul className="flex justify-between -mx-2 mb-12">
+                                <p className="text-base mb-5 text-[#adadad]">Connect With</p>
+                                <ul className="flex justify-between -mx-2 mb-6">
                                     <li className="px-2 w-full">
                                         <div
                                             className="flex h-11 items-center justify-center rounded-md
@@ -139,14 +134,8 @@ const Login = () => {
                                         </a>
                                     </li>
                                 </ul>
-                                <div className=" text-base inline-block mb-2  text-[#adadad]hover:text-primary">
-                                    Forget Password?
-                                </div>
-                                <p className="text-base text-[#adadad]">
-                                    Not a member yet?
-                                    <div className="text-primary hover:underline">
-                                        Sign Up
-                                    </div>
+                                <p className="text-base text-black">
+                                    Not a member yet?  Sign Up
                                 </p>
 
                                 <div>
