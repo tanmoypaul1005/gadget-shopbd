@@ -4,16 +4,16 @@ function Cart() {
 
     return (
 
-        <div>
-            <section className="h-screen bg-gray-100 py-5">
+        <div className="h-full">
+            <section className="bg-gray-100 py-5">
                 <div className="mx-auto px-5">
 
                     <div className="mx-auto mt-[20px]">
                         <div className="bg-white shadow">
                             <div className="px-4 py-6 sm:px-8 sm:py-10">
 
-                                <div className='grid grid-cols-12 gap-6 md:gap-5 2xl:gap-5'>
-                                <div className="flow-root col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-9">
+                                <div className='grid grid-cols-12 gap-6 md:gap-12'>
+                                <div className="flow-root col-span-12 sm:col-span-12 md:col-span-9">
                                     <ul className="-my-8">
                                         <li className="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
                                             <div className="shrink-0">
@@ -86,8 +86,8 @@ function Cart() {
                                     </ul>
                                 </div>
 
-                                <div className='col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-3'>
-                                    <div className="mt-6 border-t border-b py-2">
+                                <div className='col-span-12 sm:col-span-12 md:col-span-3'>
+                                    <div className="border-b">
                                         <div className="flex items-center justify-between">
                                             <p className="text-sm text-gray-400">Subtotal</p>
                                             <p className="text-lg font-semibold text-gray-900">$399.00</p>

@@ -4,9 +4,7 @@ function Footer() {
     return (
         <div>
             <footer
-                className="bg-black pt-20 lg:pt-[50px] relative z-10 wow fadeInUp fixed"
-                data-wow-delay=".15s"
-            >
+                className="bg-black pt-20 lg:pt-[50px] relative z-10 wow fadeInUp"data-wow-delay=".15s">
                 <div className="container ml-[20px]">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12 px-4">
