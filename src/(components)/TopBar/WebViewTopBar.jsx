@@ -1,4 +1,6 @@
 import useUtilityStore from '@/Stores/UtilityStore'
+import { iCart, shopLogo } from '@/Utility/AllImageImport'
+import Image from 'next/image'
 import React from 'react'
 
 function WebViewTopBar() {
@@ -12,7 +14,7 @@ function WebViewTopBar() {
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <img
-                                className="w-8 h-8"
+                                className="max-w-[24px] min-w-[24px] h-8"
                                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                                 alt="Workflow"
                             />
@@ -50,19 +52,42 @@ function WebViewTopBar() {
                                     Booking Cart
                                 </a>
 
-                                <a
-                                    href="/singin"
-                                    className={`hover:bg-[#2257AA] text-white px-3 py-2 rounded-md text-sm font-medium
-                      ${window.location.pathname === '/singin' || window.location.pathname === '/singup' ? 'bg-[#2257AA] text-white' : ''}`}
+                                <a href="/login"
+                                    className={`hover:bg-[#2257AA]
+                                     text-white px-3 py-2 
+                                     rounded-md text-sm 
+                                     font-medium
+                                    ${window.location.pathname === '/login' || window.location.pathname === '/singup' ? 'bg-[#2257AA] text-white' : ''}`}
                                 >
-                                    Singin
+                                    Login
                                 </a>
                             </div>
                         </div>
+
                     </div>
 
+                    {!isTopBarOpen && <div className='cursor-pointer flex justify-end items-end invisible md:visible'>
+                        <Image
+                            src={iCart}
+                            alt="Picture of the author"
+                            width={40}
+                            height={40}
+                        />
+
+                    </div>}
 
                     <div className="flex -mr-2 md:hidden">
+
+                        {!isTopBarOpen && <div className='cursor-pointer flex justify-end items-end '>
+                            <Image
+                                src={iCart}
+                                alt="Picture of the author"
+                                width={40}
+                                height={40}
+                            />
+                        </div>}
+
+
                         <button
                             onClick={() => setIsTopBarOpen(!isTopBarOpen)}
                             type="button"
