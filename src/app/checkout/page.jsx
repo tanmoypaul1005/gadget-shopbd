@@ -33,6 +33,7 @@ function Checkout() {
                     </div>
                 </div>
             </div>
+            
             <div className="grid sm:px-10 lg:grid-cols-2 lg:px-[20px] xl:px-[20px]">
                 <div className="px-4 pt-8">
                     <p className="text-xl font-medium">Order Summary</p>
@@ -82,6 +83,7 @@ function Checkout() {
                         </div>
                     </form>
                 </div>
+
                 <div className="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
                     <p className="text-xl font-medium">Payment Details</p>
                     <p className="text-gray-400">Complete your order by providing your payment details.</p>
