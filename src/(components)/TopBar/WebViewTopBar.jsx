@@ -32,8 +32,7 @@ function WebViewTopBar() {
                                     href="/tour-package"
                                     className={`text-gray-300 hover:bg-[#2257AA] hover:text-white px-3 py-2 rounded-md 
                     text-sm font-medium ${window.location.pathname === '/tour-package' && 'bg-[#2257AA] text-white'}`}
-                                >
-                                    Tour Package
+                                >Tour Package
                                 </a>
 
                                 <a
@@ -41,8 +40,7 @@ function WebViewTopBar() {
                                     className={`hover:bg-[#2257AA] text-white px-3 py-2 rounded-md text-sm font-medium
                     ${window.location.pathname === '/blog' && 'bg-[#2257AA] text-white'}`}
                                 >
-                                    Blog
-                                </a>
+                                    Blog</a>
 
                                 <a
                                     href="/booking-cart"
@@ -66,7 +64,8 @@ function WebViewTopBar() {
 
                     </div>
 
-                    {!isTopBarOpen && <div className='cursor-pointer flex justify-end items-end invisible md:visible'>
+                    {!isTopBarOpen && <div 
+                    className='cursor-pointer flex justify-end items-end invisible md:visible'>
                         <Image
                             src={iCart}
                             alt="Picture of the author"
