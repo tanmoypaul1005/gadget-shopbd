@@ -61,7 +61,6 @@ function WebViewTopBar() {
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
                     {!isTopBarOpen && <div 
