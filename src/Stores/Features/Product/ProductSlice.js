@@ -1,5 +1,6 @@
 import { toast } from 'react-toastify';
-import { ApiSlice } from "../Api/ApiSlice";
+import { ApiSlice } from '../Api/ApiSlice';
+
 
 export const ProductSlice = ApiSlice.injectEndpoints({
 
