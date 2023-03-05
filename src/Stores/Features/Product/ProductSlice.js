@@ -5,7 +5,7 @@ import { ApiSlice } from '../Api/ApiSlice';
 export const ProductSlice = ApiSlice.injectEndpoints({
 
   tagTypes: [],
-  
+
   endpoints: (builder) => ({
     getBlog: builder.query({
       query: () => "/blog/get",
