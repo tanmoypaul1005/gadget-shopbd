@@ -24,31 +24,26 @@ function WebViewTopBar() {
                                 <a
                                     href="/"
                                     className={`hover:bg-[#2257AA] text-white px-3 py-2 rounded-md text-sm font-medium
-                    ${window.location.pathname === '/' && 'bg-[#2257AA] text-white'}`}>
-                                    Home
-                                </a>
+                                    ${window.location.pathname === '/' && 'bg-[#2257AA] text-white'}`}>
+                                    Home</a>
 
                                 <a
-                                    href="/tour-package"
+                                    href="/category"
                                     className={`text-gray-300 hover:bg-[#2257AA] hover:text-white px-3 py-2 rounded-md 
-                    text-sm font-medium ${window.location.pathname === '/tour-package' && 'bg-[#2257AA] text-white'}`}
-                                >Tour Package
-                                </a>
+                                        text-sm font-medium ${window.location.pathname === '/tour-package' && 'bg-[#2257AA] text-white'}`}
+                                >Category</a>
 
                                 <a
-                                    href="/blog"
+                                    href="/product"
                                     className={`hover:bg-[#2257AA] text-white px-3 py-2 rounded-md text-sm font-medium
-                    ${window.location.pathname === '/blog' && 'bg-[#2257AA] text-white'}`}
-                                >
-                                    Blog</a>
+                                    ${window.location.pathname === '/blog' && 'bg-[#2257AA] text-white'}`}
+                                >Product</a>
 
                                 <a
                                     href="/booking-cart"
                                     className={`hover:bg-[#2257AA] text-white px-3 py-2 rounded-md text-sm font-medium
-                      ${window.location.pathname === '/booking-cart' && 'bg-[#2257AA] text-white'}`}
-                                >
-                                    Booking Cart
-                                </a>
+                                    ${window.location.pathname === '/booking-cart' && 'bg-[#2257AA] text-white'}`}
+                                >Booking Cart</a>
 
                                 <a href="/login"
                                     className={`hover:bg-[#2257AA]
@@ -56,9 +51,7 @@ function WebViewTopBar() {
                                      rounded-md text-sm 
                                      font-medium
                                     ${window.location.pathname === '/login' || window.location.pathname === '/singup' ? 'bg-[#2257AA] text-white' : ''}`}
-                                >
-                                    Login
-                                </a>
+                                >Login</a>
                             </div>
                         </div>
                     </div>

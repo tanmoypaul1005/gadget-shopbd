@@ -41,6 +41,7 @@ async function getData(id) {
 }
 
 export default async function page(ctx) {
+
     const data = await getData(ctx.params.category_id[0]);
 
     return <main>
