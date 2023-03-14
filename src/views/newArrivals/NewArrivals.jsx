@@ -2,7 +2,7 @@ import ShopCard from "@/(components)/card/ShopCard";
 import axios from "axios";
 
 async function getData() {
-  const res = await axios.get('http://localhost:5000/api/product',{ params: { "status": "New Arrivals" }});
+  const res = await axios.post('http://localhost:5000/api/product', { status: "New Arrivals" });
   return res?.data
 }
 
