@@ -11,7 +11,7 @@ async function getData() {
 export default async function ShopCategory() {
     const data = await getData();
 
-    console.log("data", data)
+    // console.log("data", data)
 
     return <main>
         <div>
@@ -33,6 +33,5 @@ export default async function ShopCategory() {
                 </div>
             </section>
         </div>
-
     </main>;
 }

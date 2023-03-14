@@ -25,7 +25,7 @@ const ShopCard = ({
                     <p className="leading-relaxed mb-3">{description}</p>
 
                     <div className="flex justify-between">
-                        <span classNameName="flex justify-center items-center">{price} ৳</span>
+                        <span className="flex justify-center items-center">{price} ৳</span>
                         <Image
                             src={shopLogo}
                             alt="Picture of the author"
