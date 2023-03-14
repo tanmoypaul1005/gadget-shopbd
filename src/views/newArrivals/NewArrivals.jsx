@@ -1,15 +1,16 @@
 import ShopCard from "@/(components)/card/ShopCard";
+import { BaseUrlSrc } from "@/Utility/Url";
 import axios from "axios";
 
 async function getData() {
-  const res = await axios.post('http://localhost:5000/api/product', { status: "New Arrivals" });
+  const res = await axios.post(`${BaseUrlSrc}/product`, { status: "New Arrivals" });
   return res?.data
 }
 
 export default async function NewArrivals() {
   const data = await getData();
 
-  console.log("data", data)
+  // console.log("data", data)
 
   return <main>
     <div>
@@ -21,7 +22,11 @@ export default async function NewArrivals() {
           <div className="flex  flex-wrap">
             {data?.data?.length > 0 ?
               data?.data?.map((item, index) => (
-                <ShopCard title={item?.name} image={item?.image} index={index} key={index} />
+                <ShopCard
+                  title={item?.name}
+                  image={item?.image}
+                  index={index} key={index}
+                />
               ))
               : 'ddd'}
           </div>
