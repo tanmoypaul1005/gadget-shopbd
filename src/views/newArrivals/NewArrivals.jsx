@@ -28,7 +28,7 @@ export default async function NewArrivals() {
                   index={index} key={index}
                 />
               ))
-              : 'ddd'}
+              : 'No Product'}
           </div>
         </div>
       </section>

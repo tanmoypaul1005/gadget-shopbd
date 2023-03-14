@@ -1,7 +1,7 @@
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 import NewArrivals from '@/views/newArrivals/NewArrivals'
-import ShopCategory from '@/views/shopcategory/Shopcategory'
+import ShopCategory from '@/views/shopCategory/ShopCategory'
 import CommonCarousel from '@/(components)/commonCarousel/CommonCarousel'
 
 
