@@ -37,12 +37,15 @@ import { BaseUrlSrc } from '@/Utility/Url';
 
 async function getData(id) {
     const res = await axios.post(`${BaseUrlSrc}/product`, { category_id: id });
+    console.log("res",res)
     return res?.data
 }
 
 export default async function page(ctx) {
 
     const data = await getData(ctx.params.category_id[0]);
+
+    console.log("a",data)
 
     return <main>
         <div>
