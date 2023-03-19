@@ -3,14 +3,18 @@ import React from 'react';
 import Image from 'next/image';
 import { shopLogo } from '@/Utility/AllImageImport';
 import Link from 'next/link';
+import { addCart } from '@/Stores/cartStore';
 
 const ShopCard = ({
     title = "some Title",
     description = "some Description",
     new_arrivals = false,
     image = "https://www.ncenet.com/wp-content/uploads/2020/04/No-image-found.jpg",
-    price = "0"
+    price = "0",
+    id = 0
 }) => {
+
+    console.log("www",id)
 
     return (
 
@@ -27,6 +31,7 @@ const ShopCard = ({
                     <div className="flex justify-between">
                         <span className="flex justify-center items-center">{price} ৳</span>
                         <Image
+                            onClick={() => { addCart({ "product": id, "quantity": "1", user: "63106ce85cddcdbba73f0cf4" }) }}
                             src={shopLogo}
                             alt="Picture of the author"
                             width={30}

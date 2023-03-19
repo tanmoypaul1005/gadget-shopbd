@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.11",
+    "@mui/material": "^5.11.13",
     "@next/font": "13.1.6",
     "@reduxjs/toolkit": "^1.9.3",
     "antd": "^5.2.2",
@@ -19,6 +20,7 @@
     "primereact": "^9.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.3.4",
     "react-redux": "^8.0.5",
     "rsuite": "^5.27.0",
     "zustand": "^4.3.3"
