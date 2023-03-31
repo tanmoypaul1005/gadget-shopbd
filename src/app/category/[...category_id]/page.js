@@ -19,7 +19,7 @@ export default async function page(ctx) {
                     <div className="text-center mb-[20px]">
                         <h1 className="text-2xl md:text-4xl text-gray-700 font-semibold">{data?.data[0]?.category?.name}</h1>
                     </div>
-                    <div className="mx-[20px] grid max-w-6xl  grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div className="mx-[20px] grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                         {data?.data?.length > 0 ?
                             data?.data?.map((item, index) => (
                                 <div>

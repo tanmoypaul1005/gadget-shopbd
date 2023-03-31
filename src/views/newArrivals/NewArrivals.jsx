@@ -19,13 +19,15 @@ export default async function NewArrivals() {
           <div className="text-center mb-[20px]">
             <h1 className="text-2xl md:text-4xl text-gray-700 font-semibold">New Arrivals Cards</h1>
           </div>
-          <div className="flex  flex-wrap">
+          <div className="mx-[20px] grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {data?.data?.length > 0 ?
               data?.data?.map((item, index) => (
                 <ShopCard
                   title={item?.name}
                   image={item?.image}
-                  index={index} key={index}
+                  index={index} 
+                  key={index}
+                  id={item?._id}
                 />
               ))
               : 'No Product'}

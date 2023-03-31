@@ -31,7 +31,7 @@ const ShopCard = ({
                     </div>
 
                     <div className="mt-1 p-2">
-                        <h2 className="text-slate-700">The Hilton Hotel</h2>
+                        <h2 className="text-slate-700">{title}</h2>
                         <p className="mt-1 text-sm text-slate-400">Lisbon, Portugal</p>
 
                         <div className="mt-3 flex items-end justify-between">
