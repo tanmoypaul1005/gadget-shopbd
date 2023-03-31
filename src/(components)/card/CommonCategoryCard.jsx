@@ -1,13 +1,13 @@
 "use client"
 import React from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const CommonCategoryCard = ({title="Rome",id=""}) => {
-
+    const router = useRouter();
     return (
         <div>
-            <Link href={`/category/${id}`}
-                className=" relative block overflow-hidden 
+            <div onClick={() => router.push(`/category/${id}`)}
+                className="cursor-pointer relative block overflow-hidden 
                 rounded-xl bg-[url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80)] bg-cover bg-center bg-no-repeat">
                 <div className="absolute inset-0 bg-black/25"></div>
                 <div className="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
@@ -39,7 +39,7 @@ const CommonCategoryCard = ({title="Rome",id=""}) => {
                         </svg>
                     </span>
                 </div>
-            </Link>
+            </div>
         </div>
     );
 };
