@@ -4,7 +4,7 @@ import React from "react";
 import { RotatingLines } from "react-loader-spinner";
 
 export default function LoadingModal() {
-    const { isLoading } = useUtilityStore();
+    const { isLoading } = useUtilityStore.getState();
     return (
         <>
             <Modal

@@ -8,8 +8,8 @@ const useUtilityStore = create((set) => ({
     },
     setLoggedUser: (value) => set({ loggedUser: value }),
 
-    isLoading: false,
-    setLoading: (status) => set((state) => (state.isLoading = status)),
+    isLoading: true,
+    setLoading: (value) => set({ isLoading: value }),
 
     isTopBarOpen: false,
     setIsTopBarOpen: (value) => set({ isTopBarOpen: value }),

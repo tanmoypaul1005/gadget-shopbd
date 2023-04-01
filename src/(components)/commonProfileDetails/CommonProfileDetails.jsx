@@ -1,7 +1,9 @@
 "use client"
+import { addCart } from '@/Stores/cartStore'
 import React from 'react'
+import { redirect } from 'next/navigation';
 
-function CommonProfileDetails({ title = "", brand = "", price = 0, description = "", offerPrice = 0, offer = 0 }) {
+function CommonProfileDetails({ product_id = "", title = "", brand = "", price = 0, description = "", offerPrice = 0, offer = 0 }) {
 
     return (
         <div>
@@ -90,7 +92,14 @@ function CommonProfileDetails({ title = "", brand = "", price = 0, description =
                                         </svg>
                                     </div>
 
-                                    <button type="button" className="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">
+                                    <button
+                                        onClick={() => {
+                                            const success = addCart({ user: "63074f5cfebd66ef054c8fb5", product: product_id, quantity: 1 });
+                                            if(success){
+                                                redirect("/cart");
+                                            }
+                                        }}
+                                        type="button" className="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">
                                         Add to Cart
                                     </button>
                                 </div>
