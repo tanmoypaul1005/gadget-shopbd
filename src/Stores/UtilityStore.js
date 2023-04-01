@@ -2,6 +2,7 @@ import {create} from "zustand";
 
 
 const useUtilityStore = create((set) => ({
+    
     loggedUser: {
         name: "",
         email: "",
