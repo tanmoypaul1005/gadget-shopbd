@@ -1,9 +1,9 @@
-import { create } from "zustand";
-// import useUtilityStore from "./UtilityStore";
+import { create } from "zustand"
 import axios from "axios";
 import { BaseUrlSrc } from "@/Utility/Url";
+import useUtilityStore from "./UtilityStore";
 
-// const { setLoading } = useUtilityStore();
+const { setLoading } = useUtilityStore.getState();
 
 const useCartStore = create((set) => ({
 
@@ -14,20 +14,20 @@ const useCartStore = create((set) => ({
 
 export const addCart = async (body) => {
     try {
-        // setLoading(true);
-        const res = await axios.post(`${BaseUrlSrc}/cart/add`,  body );
+        setLoading(true);
+        const res = await axios.post(`${BaseUrlSrc}/cart/add`, body);
         console.log("addCart res.data:::: ", res);
 
-        if (res.status === 200) {
-            // setLoading(false);
+        if (res.data.success === true) {
+            setLoading(false);
             return true;
         } else {
-            // setLoading(false);
+            setLoading(false);
             return false;
         }
     } catch (error) {
         console.log("addCart:", error);
-        // setLoading(false);
+        setLoading(false);
         return false;
     }
 };

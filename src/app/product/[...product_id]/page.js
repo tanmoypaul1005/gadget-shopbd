@@ -25,6 +25,7 @@ export default async function page(ctx) {
                     description={data?.data?.product?.description}
                     offerPrice={data?.data?.product?.offerprice}
                     offer={data?.data?.product?.offer}
+                    product_id={data?.data?.product?._id}
                 />
             </section>
         </div>

@@ -4,12 +4,15 @@ import NewArrivals from '@/views/newArrivals/NewArrivals'
 import ShopCategory from '@/views/shopcategory/ShopCategory'
 import { iBanner } from '@/Utility/AllImageImport'
 import Image from 'next/image'
+import LoadingModal from '@/(components)/modal/LoadingModal'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <LoadingModal/>
       <Image
       src={iBanner}
       alt="Picture of the author"
