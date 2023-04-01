@@ -2,7 +2,7 @@ import {create} from "zustand";
 
 
 const useUtilityStore = create((set) => ({
-    
+
     loggedUser: {
         name: "",
         email: "",
@@ -32,6 +32,7 @@ const useUtilityStore = create((set) => ({
 
     showEditAccordion: false,
     setShowEditAccordion: (value) => set({ showEditAccordion: value }),
+    
 }));
 
 
